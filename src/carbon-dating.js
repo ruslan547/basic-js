@@ -7,7 +7,7 @@ module.exports = function dateSample(sampleActivity) {
   if (!+sampleActivity ||
     sampleActivity == 3 ||
     sampleActivity == 3.312312 ||
-    sampleActivity > 15 ||
+    sampleActivity > MODERN_ACTIVITY ||
     sampleActivity < 0
   ) {
     return false;
