@@ -18,9 +18,7 @@ const chainMaker = {
       position >= this.getLength()
     ) {
       this.chain = [];
-      const er = new Error();
-      er._validationProp = 'NA';
-      throw er;
+      throw new Error();
     }
 
     this.chain.splice(--position, 1);

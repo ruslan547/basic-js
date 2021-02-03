@@ -6,9 +6,7 @@ module.exports = function getSeason(date) {
   }
 
   if (Object.prototype.toString.call(date) !== '[object Date]') {
-    const er = new Error();
-    er._validationProp = 'NA';
-    throw er;
+    throw new Error();
   }
 
   const month = date.getMonth();
